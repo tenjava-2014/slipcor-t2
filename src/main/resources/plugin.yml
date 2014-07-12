@@ -3,7 +3,7 @@ main: com.tenjava.slipcor.TenJava
 version: '${project.version}'
 commands:
   battery:
-    description: testing.. 1... 2... 3...
+    description: Place a special iron block that can be loaded with redstone current
     aliases: ['b']
     usage: |
       /<command>

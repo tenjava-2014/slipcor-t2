@@ -22,7 +22,6 @@ Features
 *** Lever On -> Lever Off
 * Block keeps charge when broken
 * Displays charge via item frames
-** TODO: better?!
 * Display charge via displayname
 * Can be charged by:
 ** daylight sensor / any other direct source
@@ -36,6 +35,9 @@ Usage
 -----
 
 1. Install plugin
-2. Do things with it
-3. ???
-4. profit!
+2. run the command /b or /battery
+3. place the Iron Block (or whatever you configured it to be)
+4. Watch it consuming all your redstone >)
+5. Remove it before it re-sends the current to the burnt out wires!
+6. Place it where you need the power
+7. Enjoy!

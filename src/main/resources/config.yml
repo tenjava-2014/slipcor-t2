@@ -1,7 +1,12 @@
 # set burnout to AIR to not have it burn out
 burnout: true
 blocktype: IRON_BLOCK
+lore:
+- Battery Placer
+- Right click to place a Battery
+- Left click to turn the clicked
+- block into a Battery
 burnouts:
   REDSTONE_TORCH_ON: REDSTONE_TORCH_OFF
-  IRON_BLOCK: COAL_BLOCK
+  REDSTONE_BLOCK: COAL_BLOCK
   LEVER: LEVER
