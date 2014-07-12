@@ -2,6 +2,7 @@ package com.tenjava.slipcor;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -63,6 +64,23 @@ public class TenJava extends JavaPlugin {
      */
     public List<Chargeable> getChargeables () {
         return chargeableList;
+    }
+
+    /**
+     * API-Call to get a Chargeable at this block / that belongs to this block
+     * @param block the Block to find
+     * @return the Chargeable, null if not found
+     */
+    public Chargeable getChargeableAt(Block block) {
+        for (Chargeable c : chargeableList) {
+            if (c.getBlock().equals(block)) {
+                return c;
+            }
+            if (c.getBlockMap().containsKey(block)) {
+                return c;
+            }
+        }
+        return null;
     }
 
     /**

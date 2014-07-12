@@ -15,6 +15,8 @@ This is a submission for the 2014 ten.java contest.
 Features
 --------
 * Charge a custom block with power signals
+* supports any byte format redstone signal (scaleable!)
+* supports any Material your implementation supports!
 * Configurable:
 ** Power sources may burn out
 *** Torch -> Torch_Off
