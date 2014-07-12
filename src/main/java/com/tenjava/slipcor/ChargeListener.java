@@ -1,5 +1,7 @@
 package com.tenjava.slipcor;
 
+import org.bukkit.Material;
+import org.bukkit.block.BlockState;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.EventHandler;
@@ -10,6 +12,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.material.Redstone;
 
 /**
  * Created by slipcor on 12.07.2014.
@@ -38,6 +41,7 @@ public class ChargeListener implements Listener {
     public void onBreak(BlockBreakEvent event) {
         for (Chargeable c : plugin.getChargeables()) {
             if (c.getBlock().equals(event.getBlock())) {
+                c.destroy();
                 plugin.removeChargeable(c);
                 return;
             }
