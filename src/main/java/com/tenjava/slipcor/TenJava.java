@@ -1,4 +1,4 @@
-package com.tenjava.entries.slipcor.t2;
+package com.tenjava.slipcor;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
