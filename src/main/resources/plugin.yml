@@ -1,3 +1,9 @@
-name: slipcor-t2
-main: com.tenjava.entries.slipcor.t2.TenJava
+name: Battery
+main: com.tenjava.slipcor.TenJava
 version: '${project.version}'
+commands:
+  battery:
+    description: testing.. 1... 2... 3...
+    aliases: ['b']
+    usage: |
+      /<command>
