@@ -10,18 +10,25 @@ This is a submission for the 2014 ten.java contest.
 - __MC Version:__ 1.7.9 (latest Bukkit beta)
 - __Stream URL:__ https://twitch.tv/slipcor
 
-<!-- put chosen theme above -->
-
 ---------------------------------------
 
-Compilation
------------
-
-- Download & Install [Maven 3](http://maven.apache.org/download.html)
-- Clone the repository: `git clone https://github.com/tenjava/slipcor-t2`
-- Compile and create the plugin package using Maven: `mvn`
-
-Maven will download all required dependencies and build a ready-for-use plugin package!
+Features
+--------
+* Charge a custom block with power signals
+* Configurable:
+** Power sources may burn out
+*** Torch -> Torch_Off
+*** Redstone_Block -> Coal_Block
+*** Lever On -> Lever Off
+* Block keeps charge when broken
+* Displays charge via item frames
+** TODO: better?!
+* Display charge via displayname
+* Can be charged by:
+** daylight sensor / any other direct source
+** applied indirect current
+* Will send out charge to:
+** direct redstone connection
 
 ---------------------------------------
 
@@ -30,6 +37,5 @@ Usage
 
 1. Install plugin
 2. Do things with it
-
-<!-- Hi, slipcor! This is the default README for every ten.java submission. -->
-<!-- We encourage you to edit this README with some information about your submission – keep in mind you'll be scored on documentation! -->
+3. ???
+4. profit!

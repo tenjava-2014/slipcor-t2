@@ -1,0 +1,6 @@
+# set burnout to AIR to not have it burn out
+burnout: true
+burnouts:
+  REDSTONE_TORCH_ON: REDSTONE_TORCH_OFF
+  REDSTONE_BLOCK: COAL_BLOCK
+  LEVER: LEVER
